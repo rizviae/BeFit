@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BeFit</string>
+    
+    <string name="title_section1">My Profile</string>
+    <string name="title_section2">My Activities</string>
+    <string name="title_section3">My Nutrition</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="textView2">My Favorite Foods</string>
+    <string name="LastNameLabel">Last Name :</string>
+    <string name="ProfileImageTag">Profile Image</string>
+    <string name="DateofBirthLabel">Date of Birth :</string>
+    <string name="SelectDateButtonText">Select Date</string>
+    <string name="MyExercisesHeader">My Exercises</string>
+    <string name="DailyExercisesButtonText">Daily</string>
+    <string name="WeeklyExercisesButtonText">Weekly</string>
+    <string name="MyMealsHeaderText">My Meals</string>
+    <string name="BreakfastMenuText">Breakfast Menu</string>
+    <string name="LunchMenuText">Lunch Menu</string>
+    <string name="DinnerMenuText">Dinner Menu</string>
+    <string name="AddtoCalendarMealButtonText">Add To Calendar</string>
+    <string name="SelectDateMealText">Select Date</string>
+    <string name="DailyMealText">Daily</string>
+    <string name="WeeklyMealsButtonText">Weekly</string>
+
+
+</resources>

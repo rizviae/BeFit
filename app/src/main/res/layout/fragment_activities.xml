@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/exercises" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/MyExercisesHeader"
+                    android:textColor="#000FFF"
+                    android:textSize="25sp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/daily_schedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/DailyExercisesButtonText" />
+
+                    <Button
+                        android:id="@+id/weekly_schedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/WeeklyExercisesButtonText" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pickup_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/SelectDateButtonText" />
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_gravity="right"
+            android:textSize="@dimen/profile_text_size"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/activity_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Sport/Exercise" />
+
+            <Spinner
+                android:id="@+id/activities_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/activity_tv" />
+
+            <Button
+                android:id="@+id/new_activity_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/activities_list"
+                android:layout_below="@+id/activities_list"
+                android:text="New Exercise" />
+        </RelativeLayout>
+
+
+        <RadioGroup
+            android:id="@+id/duration_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/min_30_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="30 minutes" />
+
+            <RadioButton
+                android:id="@+id/min_45_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="45 minutes" />
+
+            <RadioButton
+                android:id="@+id/min_60_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="60 minutes" />
+
+            <RadioButton
+                android:id="@+id/min_75_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="75 minutes" />
+
+            <RadioButton
+                android:id="@+id/min_90_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="90 minutes" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/add_activity_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+    </LinearLayout>
+</ScrollView>

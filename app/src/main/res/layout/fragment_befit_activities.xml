@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!--NOT NEEDED RIGHT NOW,
+    MAYBE USED AS AN ENHANCMENT LATER TO ALLOW EASY SELECTION OF ACTIVITIES
+    TO ADD TO MYACTIVITIES:-->
+
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="My Activities :"
+                android:textSize="20sp"
+                android:textColor="#FF4830FF"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dip"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/walking"
+                android:src="@drawable/walking"
+                android:clickable="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Walking"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_weight="3"
+                android:layout_marginLeft="20dip"></TextView>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/running"
+                android:src="@drawable/running"
+                android:clickable="true"
+                android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Running"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_weight="3"
+            android:layout_marginLeft="20dip"></TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/biking"
+                android:src="@drawable/biking"
+                android:clickable="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Biking"
+                android:textSize="20sp"
+                android:layout_weight="3"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dip"></TextView>
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/weights"
+                android:src="@drawable/weights"
+                android:clickable="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Weights"
+                android:textSize="20sp"
+                android:layout_weight="3"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dip"></TextView>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/swimming"
+                android:src="@drawable/simming"
+                android:clickable="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Swimming"
+                android:textSize="20sp"
+                android:layout_weight="3"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dip"></TextView>
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tennis"
+                android:src="@drawable/tennis"
+                android:clickable="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Tennis"
+                android:textSize="20sp"
+                android:layout_weight="3"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dip"/>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

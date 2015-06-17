@@ -1,0 +1,317 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="475dp"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="2"
+        android:src="@drawable/myprofile"
+        android:contentDescription="@string/ProfileImageTag" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:text="MyProfile"
+        android:textColor="#000FFF"
+        android:textSize="25sp"
+        android:layout_column="2"
+        android:gravity="start"
+        android:paddingRight="5dp"/>
+
+    </TableRow>
+</TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save_bt">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="1"
+                    android:text="@string/LastNameLabel"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/profile_text_size"/>
+
+
+                <EditText
+                    android:id="@+id/lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="true"
+                    android:inputType="textPersonName"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="@dimen/profile_text_size" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="1"
+                    android:text="First Name :"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/profile_text_size"></TextView>
+
+
+                <EditText
+                    android:id="@+id/firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="true"
+                    android:inputType="textPersonName"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="@dimen/profile_text_size" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="1"
+                    android:text="@string/DateofBirthLabel"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/profile_text_size"></TextView>
+
+
+                <TextView
+                    android:id="@+id/dateofbirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:hint="YYYY-MM-DD"
+                    android:inputType="date"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="@dimen/profile_text_size" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="1"
+                    android:text="Age :"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/profile_text_size"></TextView>
+
+
+                <EditText
+                    android:id="@+id/myage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:inputType="number"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="@dimen/profile_text_size" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="1"
+                    android:text="Gender :"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/profile_text_size"></TextView>
+
+
+                <RadioGroup
+                    android:id="@+id/gender_radiogroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/radio_male" />
+
+                    <RadioButton
+                        android:id="@+id/radio_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_female" />
+
+                </RadioGroup>
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="1"
+                    android:text="eMail :"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/profile_text_size"></TextView>
+
+
+                <EditText
+                    android:id="@+id/myemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="true"
+                    android:inputType="textEmailAddress"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="@dimen/profile_text_size" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="1"
+                    android:text="Weight :"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/profile_text_size"></TextView>
+
+
+                <EditText
+                    android:id="@+id/myweight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="true"
+                    android:inputType="numberDecimal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="@dimen/profile_text_size" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="1"
+                    android:text="Target Weight :"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/profile_text_size"></TextView>
+
+
+                <EditText
+                    android:id="@+id/targetweight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="true"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="@dimen/profile_text_size" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="1"
+                    android:text="Height (inches):"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/profile_text_size"></TextView>
+
+
+                <EditText
+                    android:id="@+id/height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="true"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="@dimen/profile_text_size" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="1"
+                    android:text="BMI :"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/profile_text_size"></TextView>
+
+
+                <TextView
+                    android:id="@+id/bmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:text="BMI"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="@dimen/profile_text_size" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/save_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Save" />
+</RelativeLayout>
