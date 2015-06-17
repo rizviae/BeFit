@@ -29,4 +29,11 @@ Eating Habits/Meals
 Weekly menu for Breakfast/Lunch/Dinner
 Enter new food/meal
 
+User creates their profile
+Workout Schedule
+User can specify the type/duration and occurrence of any physical activity he/she is doing
+
+Back-End Design Uses SQLite Database for storing information.
+
+
 
